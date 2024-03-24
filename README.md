@@ -20,7 +20,7 @@ Evora is the best personal assistant in the field of ethical hacking and penetra
 the <a href="https://www.youtube.com/@TheEthicalGuy">youtube channel</a> and my <a href="https://t.me/TheEthicalGuy">telegram channel</a>
 
  
-# What Evora do ?
+# What Evora does ?
 It relies on logical analysis to answer your questions and can help you with everything. We started from answering some questions to creating reports for you and programming tools and functions.
 <br>
 With she's help you can literally do anything, you can create tools, trojans, phishing scripts, analyzation programs, reports etc

@@ -1,0 +1,3 @@
+readline
+google
+google.generativeai

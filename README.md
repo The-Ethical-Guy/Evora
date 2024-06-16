@@ -29,8 +29,9 @@ some of Evora features
 2) Writing reports, articles, plans and any other content
 3) Writing programming codes
 4) Program, software and hardware logical design
-5) system function execution using "/system" tag (beta)
-6) system management <br>
+5) System function execution using "/system" tag (beta)
+6) System management
+7) File, code, malware and data analysis <br>
 ... <br>
 for the full decumentary click [here](https://github.com/The-Ethical-Guy/Evora/blob/main/.github/FEATURES.md)
 

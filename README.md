@@ -75,5 +75,5 @@ evora -update
 ```
 # Screenshots
 ![](https://files.catbox.moe/dstimo.png)
-![](https://files.catbox.moe/g2qz6c.png)
+![](https://files.catbox.moe/zhp4lc.png)
 

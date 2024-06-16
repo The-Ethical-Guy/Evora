@@ -79,6 +79,7 @@ evora -update
 ```
 /system #then type after it anything you want Evora to do in your device
 ```
+Example:
 ```
 /system i want to make a apk payload using metasploit listning on ip 192.168.1.4 and port 5555 and put it into the desktop of my kali machine my user is root, this is my desktop path: /root/Desktop/
 ```

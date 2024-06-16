@@ -6,5 +6,8 @@
 5. **Educate**: Explain educational concepts across various fields.
 6. **Engage in Conversation**: Conduct interactive conversations on multiple topics.
 7. **Conduct Research**: Provide real-time information from the internet (when browsing is enabled).
+8. **Conduct Research**: Provide real-time information from the internet (when browsing is enabled).
+9. **Understand Code**: Analyze and explain code snippets.
+10. **Develop Code**: Write and help debug code in various programming languages.
 
 # Special abilities

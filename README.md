@@ -14,10 +14,6 @@
 <br>
 Evora is the best personal assistant in the field of ethical hacking and penetration testing. She has a high level of accuracy and intelligence.
 
-
-# Evora features
-the <a href="https://www.youtube.com/@TheEthicalGuy">youtube channel</a> and my <a href="https://t.me/TheEthicalGuy">telegram channel</a>
-
  
 # Social media links
 the <a href="https://www.youtube.com/@TheEthicalGuy">youtube channel</a> and my <a href="https://t.me/TheEthicalGuy">telegram channel</a>
@@ -25,6 +21,11 @@ the <a href="https://www.youtube.com/@TheEthicalGuy">youtube channel</a> and my 
  
 # Why should I use Evora?
 Evora is an AI-powered assistant, she is the best choice for penetration testers and cyber security professionals because she is fully aware of all the concepts in the field of cyber security. Evora is able to accomplish your work tasks. she is capable of analyzing files, developing tools, submitting reports, and many other tasks, and of course it is the best choice for new learners because she is able to explain anything you ask her about.
+
+
+# Evora features
+test <br>
+lol
 
 
 # Evora how to install

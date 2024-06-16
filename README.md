@@ -74,6 +74,6 @@ to update it
 evora -update
 ```
 # Screenshots
-![](https://files.catbox.moe/xlz760.png)
-![](https://files.catbox.moe/ot7d5a.png)
+![](https://files.catbox.moe/dstimo.png)
+![](https://files.catbox.moe/g2qz6c.png)
 

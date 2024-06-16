@@ -24,4 +24,4 @@ If you used the "/system" tag before your order, Evora will execute the order on
 Evora will execute the command on your device and create the required apk and place it on your desktop as you requested and will show this response to you "Execution done." in case that the execution process is successful without errors.
 <br>
 <br>
-==they will be more features so soon.==
+*they will be more features so soon.*

@@ -4,6 +4,7 @@ import sys
 import re
 import time
 from AIHandler import AIH
+from Abil import *
 import readline
 
 
@@ -15,7 +16,7 @@ logo = """\033[0m
 \033[0m            \033[1;97m\033[1;31;40m▓      ▓▓▓▓▓  ▓▓  ▓▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓
 \033[0m            \033[1;97m\033[1;31;40m█  ██████████    ████  ████  ██  ███  ███        █
 \033[0m            \033[1;97m\033[1;31;40m█        █████  ██████      ███  ████  ██  ████  █
-\033[0m            \033[1;97m\033[1;31;40m██████████████████████████████████████████████████\033[0m  \033[1;93;40mBeta\033[0m
+\033[0m            \033[1;97m\033[1;31;40m██████████████████████████████████████████████████\033[0m  \033[1;93;40mV2.4\033[0m
 """
 
 print(logo)
@@ -47,11 +48,15 @@ def main():
         
     while True:
         try:
-            userInput = input("You: ")
-            response = AIH.GetReb(userInput)
-            print(response)
+            userInput = input("\033[1;36;40mYou: \033[0m")
+            if userInput.startswith("/system"):
+                ev_commands = AIH.GetReb(userInput)
+                response = sys_execution(ev_commands)
+            else:
+                response = AIH.GetReb(userInput)
+            print(f"\n\033[1;31;40mEvora:\033[0m {response}\n")
         except KeyboardInterrupt:
-            print("\033[0;31;40mSession closed.\033[0m")
+            print("\033[1;31;40mSession closed.\033[0m")
             sys.exit()
 
     

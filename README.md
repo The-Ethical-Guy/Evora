@@ -26,7 +26,7 @@ Evora is an AI-powered assistant, she is the best choice for penetration testers
 # Evora features
 some of Evora features
 1) Answer any question on any topic
-2) Writing reports, articles, plans and any other content
+2) Writing reports, articles, emails and any other content
 3) Writing programming codes
 4) Program, software and hardware logical design
 5) System function execution using "/system" tag (beta)

@@ -32,7 +32,7 @@ some of Evora features
 5) system function execution using "/system" tag (beta)
 6) system management <br>
 ... <br>
-for the full decumentary click here
+for the full decumentary click [here](https://github.com/The-Ethical-Guy/Evora/blob/main/.github/FEATURES.md)
 
 # Evora how to install
 

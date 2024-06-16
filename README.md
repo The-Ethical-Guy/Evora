@@ -31,7 +31,7 @@ some of Evora features
 4) Program, software and hardware logical design
 5) system function execution using "/system" tag (beta)
 6) system management <br>
-read the full decumentary to know about the other features <br>
+... <br>
 for the full decumentary click here
 
 # Evora how to install

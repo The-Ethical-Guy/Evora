@@ -18,7 +18,7 @@
 17. **OSINT Helping**: Assist with Open Source Intelligence (OSINT) gathering and analysis.
 
 # Special abilities
-**system execution**
-If you used the "/system" tag before your order, Evora will execute the order on your system. For example, if you send this message to Evora<br>
-"/system i want to make a apk payload using metasploit listning on ip 192.168.1.4 and port 5555 and put it into the desktop of my kali machine my user is root, this is my desktop path: /root/Desktop/"<br>
+**system execution** <br>
+If you used the "/system" tag before your order, Evora will execute the order on your system. For example, if you send this message to Evora <br>
+"/system i want to make a apk payload using metasploit listning on ip 192.168.1.4 and port 5555 and put it into the desktop of my kali machine my user is root, this is my desktop path: /root/Desktop/" <br>
 Evora will execute the command on your device and create the required apk and place it on your desktop as you requested and will show this response to you "Execution done." in case that the execution process is successful without errors.

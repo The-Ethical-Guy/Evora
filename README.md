@@ -30,7 +30,7 @@ some of Evora features
 3) Writing programming codes
 4) Program, software and hardware logical design
 5) system function execution using "/system" tag (beta)
-6) system management
+6) system management <br>
 read the full decumentary to know about the other features <br>
 for the full decumentary click here
 

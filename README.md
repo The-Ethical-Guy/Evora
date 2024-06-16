@@ -75,7 +75,7 @@ evora -update
 ```
 
 # Special abilities
-system execution
+**system execution** (make Evora control your device fir you)
 ```
 /system #then type after it anything you want Evora to do in your device
 ```

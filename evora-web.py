@@ -2,9 +2,12 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 import os
 from AIHandler import AIH
+from Abil import *
 import sys
 import readline
 import time
+import re
+import subprocess
 
 
 #colors & fonts
@@ -27,7 +30,7 @@ logo = """\033[0m
 \033[0m            \033[1;97m\033[1;31;40m▓      ▓▓▓▓▓  ▓▓  ▓▓▓  ▓▓▓▓  ▓▓       ▓▓▓  ▓▓▓▓  ▓
 \033[0m            \033[1;97m\033[1;31;40m█  ██████████    ████  ████  ██  ███  ███        █
 \033[0m            \033[1;97m\033[1;31;40m█        █████  ██████      ███  ████  ██  ████  █
-\033[0m            \033[1;97m\033[1;31;40m██████████████████████████████████████████████████\033[0m  \033[1;93;40mBeta\033[0m
+\033[0m            \033[1;97m\033[1;31;40m██████████████████████████████████████████████████\033[0m  \033[1;93;40mV2.4\033[0m
 """
 
 print(logo)
@@ -38,7 +41,7 @@ def print_with_effect(text):
             print(char, end='', flush=True)
             time.sleep(0.02) 
     except KeyboardInterrupt:
-        print("\033[0;31;40mEvora stopped.\033[0m")
+        print("\033[1;31;40mEvora stopped.\033[0m")
         sys.exit()
 
 
@@ -50,7 +53,7 @@ print("\033[1;32;40mStarting the server...")
 try:
     AIH.StartItUp()
 except KeyboardInterrupt:
-    print("\033[0;31;40mEvora stopped.\033[0m")
+    print("\033[1;31;40mEvora stopped.\033[0m")
     sys.exit()
 except:
     print("A STRANGE ERROR OCCURRED, PLEASE RESTART THE TOOL")
@@ -87,17 +90,35 @@ class MyHTTPRequestHandler(BaseHTTPRequestHandler):
             self.end_headers()
             with open("templates/js/send.js", "rb") as file:
                 self.wfile.write(file.read())
-        elif parsed_path.path == "/fonts/BLOODY.TTF":
+        elif parsed_path.path == "/textbox.js":
             self.send_response(200)
-            self.send_header("Content-type", "font/ttf")
+            self.send_header("Content-type", "application/javascript")
             self.end_headers()
-            with open("templates/style/fonts/BLOODY.TTF", "rb") as file:
+            with open("templates/js/textbox.js", "rb") as file:
+                self.wfile.write(file.read())
+        elif parsed_path.path == "/fonts/BlackCaps.otf":
+            self.send_response(200)
+            self.send_header("Content-type", "font/otf")
+            self.end_headers()
+            with open("templates/style/fonts/BlackCaps.otf", "rb") as file:
                 self.wfile.write(file.read())
         elif parsed_path.path == "/fonts/OCRAStd.otf":
             self.send_response(200)
             self.send_header("Content-type", "font/otf")
             self.end_headers()
             with open("templates/style/fonts/OCRAStd.otf", "rb") as file:
+                self.wfile.write(file.read())
+        elif parsed_path.path == "/style/img/copy.png":
+            self.send_response(200)
+            self.send_header("Content-type", "image/png")
+            self.end_headers()
+            with open("templates/style/img/copy.png", "rb") as file:
+                self.wfile.write(file.read())
+        elif parsed_path.path == "/evanai.ico":
+            self.send_response(200)
+            self.send_header("Content-type", "image/ico")
+            self.end_headers()
+            with open("templates/style/img/evanai.ico", "rb") as file:
                 self.wfile.write(file.read())
 
         elif parsed_path.path == "/get_response":
@@ -111,8 +132,27 @@ class MyHTTPRequestHandler(BaseHTTPRequestHandler):
                 self.wfile.write(response.encode())
             else:
                 self.send_error(400, "Bad Request")
+            
+           
+          
+        elif parsed_path.path == "/exec_system":
+            query_params = parse_qs(parsed_path.query)
+            if "command" in query_params:
+                message = query_params["command"][0]
+                ev_commands = AIH.GetReb(message)
+                response = sys_execution(ev_commands)
+                self.send_response(200)
+                self.send_header("Content-type", "text/plain")
+                self.end_headers()
+                self.wfile.write(response.encode())
+            else:
+                self.send_error(400, "Bad Request")
+                
+                
         else:
             self.send_error(404, "Not Found")
+
+
 
 def run(server_class=HTTPServer, handler_class=MyHTTPRequestHandler, port=port):
     server_address = ("0.0.0.0", port)
@@ -127,7 +167,7 @@ def run(server_class=HTTPServer, handler_class=MyHTTPRequestHandler, port=port):
     except KeyboardInterrupt:
         pass
     httpd.server_close()
-    print("\033[0;31;40mServer stopped.\033[0m")
+    print("\033[1;31;40mServer stopped.\033[0m")
 
 if __name__ == "__main__":
     run()

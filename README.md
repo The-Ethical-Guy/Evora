@@ -77,7 +77,7 @@ evora -update
 # Special abilities
 **system execution** (make Evora control your device for you)
 ```
-/system #then type after it anything you want Evora to do in your device
+/system #then type after it anything you want Evora to do in your device then send it to her in the chat
 ```
 Example:
 ```

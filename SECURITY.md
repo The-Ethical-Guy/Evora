@@ -3,7 +3,7 @@
 
 **1. Introduction**
 
-This User Policy and Disclaimer ("Policy") governs the use of the Evora v2.4 software ("Evora" or "Software") provided by its developers ("Developers"). By using Evora, you ("User") agree to the terms and conditions outlined in this Policy. If you do not agree with these terms, you must not use the Software.
+This User Policy and Disclaimer ("Policy") governs the use of the Evora v2.4 software ("Evora" or "Software") provided by its developers ("Developer"). By using Evora, you ("User") agree to the terms and conditions outlined in this Policy. If you do not agree with these terms, you must not use the Software.
 
 **2. Scope of the Software**
 
@@ -16,7 +16,7 @@ The User acknowledges and agrees that:
 - They will not use Evora to engage in any activities that violate local, national, or international laws, including but not limited to unauthorized penetration testing, hacking, and any other illegal cyber activities.
 - They will ensure that their use of Evora complies with all applicable regulations and standards in their jurisdiction.
 - They will take full responsibility for their actions and any consequences resulting from the use of the Software.
-- They will not distribute, modify, or create derivative works of the Software without explicit permission from the Developers.
+- They will not distribute, modify, or create derivative works of the Software without explicit permission from the Developer.
 
 **4. Limitation of Liability**
 
@@ -34,30 +34,30 @@ To the fullest extent permitted by law, the Developer shall not be liable for an
 
 **6. Indemnification**
 
-The User agrees to indemnify, defend, and hold harmless the Developers from and against any and all claims, damages, losses, liabilities, costs, and expenses (including but not limited to attorney’s fees) arising from:
+The User agrees to indemnify, defend, and hold harmless the Developer from and against any and all claims, damages, losses, liabilities, costs, and expenses (including but not limited to attorney’s fees) arising from:
 - The User's use of the Software.
 - The User's violation of this Policy.
 - The User's violation of any rights of a third party.
 
 **7. Intellectual Property**
 
-The Software and all associated materials, including but not limited to trademarks, logos, and content, are the property of the Developers and are protected by intellectual property laws. The User does not gain any ownership rights to the Software through this Policy.
+The Software and all associated materials, including but not limited to trademarks, logos, and content, are the property of the Developer and are protected by intellectual property laws. The User does not gain any ownership rights to the Software through this Policy.
 
 **8. Termination**
 
-The Developers reserve the right to terminate or suspend the User's access to the Software at any time, without notice, for conduct that the Developers believe violates this Policy or is harmful to other Users of the Software, the Developers' business, or third parties.
+The Developer reserve the right to terminate or suspend the User's access to the Software at any time, without notice, for conduct that the Developer believe violates this Policy or is harmful to other Users of the Software, the Developer' business, or third parties.
 
 **9. Changes to this Policy**
 
-The Developers may update this Policy from time to time. The User's continued use of the Software after any changes to this Policy will constitute acceptance of such changes.
+The Developer may update this Policy from time to time. The User's continued use of the Software after any changes to this Policy will constitute acceptance of such changes.
 
 **10. Governing Law**
 
-This Policy shall be governed by and construed in accordance with the laws of the jurisdiction in which the Developers operate, without regard to its conflict of law provisions. The User agrees to submit to the personal and exclusive jurisdiction of the courts located within that jurisdiction.
+This Policy shall be governed by and construed in accordance with the laws of the jurisdiction in which the Developer operate, without regard to its conflict of law provisions. The User agrees to submit to the personal and exclusive jurisdiction of the courts located within that jurisdiction.
 
 **11. Contact Information**
 
-For any questions about this Policy, please contact the Developers at their official communication channels as provided on the official Software repository or website.
+For any questions about this Policy, please contact the Developer at their official communication channels as provided on the official Software repository or website.
 
 By using Evora, the User acknowledges that they have read, understood, and agree to be bound by this User Policy and Disclaimer.
 

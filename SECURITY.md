@@ -62,23 +62,44 @@ For any questions about this Policy, please contact the Developer at their offic
 By using Evora, the User acknowledges that they have read, understood, and agree to be bound by this User Policy and Disclaimer.
 
 # Security Policy
+**Security Policy for Evora**
+
+Thank you for your interest in Evora, an advanced artificial intelligence tool designed to enhance cybersecurity and facilitate ethical hacking operations.
+
+1. **Developer Responsibility:**
+   - The sole developer of Evora is responsible for its design and development.
+   - The developer commits to fixing any technical issues in the tool promptly upon being notified.
+
+2. **Reporting Procedures:**
+   - Users can report any technical issues directly to the developer through designated channels.
+   - Reports must be submitted accurately and comprehensively to ensure swift response and resolution.
+
+3. **Vulnerability Handling:**
+   - Upon receiving a report, the developer pledges to provide a rapid and effective response.
+   - The vulnerability will be assessed, analyzed, and necessary solutions developed for its remediation.
+   - Once the solution is implemented, an update to Evora containing the necessary fixes will be released.
+
+4. **Community Collaboration:**
+   - The developer encourages continuous communication with the user community to receive feedback and continuously improve the tool.
+   - Continued interaction and collaboration with users are welcomed to evolve Evora to meet their needs and enhance their security experience.
+
+5. **Ethical Commitment:**
+   - Evora is intended for research, learning, and training purposes in the field of cybersecurity and must be used legally and ethically.
+   - Users are expected to utilize Evora responsibly and refrain from engaging in any illegal activities.
+
+6. **Security Updates:**
+   - Regular updates to Evora are provided by the developer to improve performance and enhance security.
+   - It is advised to install the latest updates promptly upon release to ensure the highest levels of security.
+
+Adherence to this security policy is integral to the use of Evora, and the developer expects active and responsible engagement from all users.
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
-
 | Version | Supported          |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| 2.1 >   | :white_check_mark: |
+| < 2.2   | :x:                |
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.

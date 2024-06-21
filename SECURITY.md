@@ -103,7 +103,7 @@ Adherence to this security policy is integral to the use of Evora, and the devel
 ## Reporting a Vulnerability
 Discovered a vulnerability in the tool? Please report it!
 
-Kindly send any vulnerabilities found in Evora to the developer at the following email: the.ethical.guy@gmail.com
+Kindly send any vulnerabilities found in Evora to the developer at the following email: the.ethical.guy.reports@gmail.com
 
 Thank you for your cooperation in enhancing Evora's security!
 

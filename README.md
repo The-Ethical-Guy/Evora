@@ -4,7 +4,7 @@
 </p>
 
 ![](https://img.shields.io/badge/category-ai_chatbot-blue)
-![](https://img.shields.io/badge/version-V2.4.2-red)
+![](https://img.shields.io/badge/version-V2.6-red)
 ![](https://img.shields.io/badge/IQ-470-purple)
 ![](https://img.shields.io/badge/status-active-green)
 ![](https://img.shields.io/badge/licens-GPLV3-white)

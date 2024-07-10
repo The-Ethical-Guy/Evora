@@ -20,14 +20,26 @@ function formatCodeBlocks(text) {
         if (part.startsWith("```") && part.endsWith("```")) {
             var codeContent = part.slice(3, -3).trim();
             var codeLines = codeContent.split('\n');
-            var langName = 'plaintext';  // الافتراضي للغة الكود
-            if (codeLines.length > 0) {
+            var langName = 'plaintext'; 
+            
+            try {
+                if (codeLines.length > 0) {
                 langName = codeLines[0].trim();
-                codeContent = codeLines.slice(1).join('\n').trim(); // حذف السطر الأول
+                codeContent = codeLines.slice(1).join('\n').trim(); 
+                }
                 
+                highlightedCode = hljs.highlight(langName, codeContent).value;
+                finalLangName = langName
+                finalCode = highlightedCode
+                
+            } catch (error) {
+                finalLangName = 'Text';
+                codeContent = codeLines.join('\n').trim()
+                finalCode = codeContent
             }
-            var highlightedCode = hljs.highlight(langName, codeContent).value;
-            return "<div class='code-bot'>" + "<h1 class='lang-name'>" + escapeHtml(langName) + "</h1>" + "<button onclick='copyCODE(this)' class='copy-button'><img class='copy-button-icon' src='/style/img/copy.png'></button>" + "<div class='code-section'>" + "<pre><code class='hljs " + escapeHtml(langName) + "'>" + highlightedCode + "</code></pre>" + "</div>" + "</div>";
+            
+
+            return "<div class='code-bot'>" + "<h1 class='lang-name'>" + escapeHtml(finalLangName) + "</h1>" + "<button onclick='copyCODE(this)' class='copy-button'><img class='copy-button-icon' src='/style/img/copy.png'></button>" + "<div class='code-section'>" + "<pre><code class='hljs " + escapeHtml(finalLangName) + "'>" + finalCode + "</code></pre>" + "</div>" + "</div>";
         } else {
             return part;
         }

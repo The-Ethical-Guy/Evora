@@ -33,7 +33,7 @@ function formatCodeBlocks(text) {
                 finalCode = highlightedCode
                 
             } catch (error) {
-                finalLangName = 'Text';
+                finalLangName = ' ';
                 codeContent = codeLines.join('\n').trim()
                 finalCode = codeContent
             }
@@ -92,7 +92,7 @@ function sendMessage() {
     } else if (UserStatement === 1) {
         url = "/exec_system?command=" + encodeURIComponent(userMessage);
     } else {
-        return; // لا تفعل شيء إذا كان المتغير ليس 0 أو 1
+        return; 
     }
 
     fetch(url)

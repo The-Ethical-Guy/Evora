@@ -23,7 +23,7 @@ sudo mv $tool_name /usr/local/bin/
 venv_path="$script_path/venvEvora"
 
 # Install python3-venv if not already installed
-if ! dpkg -s python3-venv &> /dev/null; then
+if ! dpkg -s python3-virtualenv &> /dev/null; then
     echo -e "\033[1;33mInstalling python3-venv package...\033[0m"
     sudo apt install python3-venv -y > pip_install_output.txt 2>&1
     sudo apt install python3-pip -y

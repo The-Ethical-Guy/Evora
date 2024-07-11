@@ -44,7 +44,7 @@ if [ -f "$script_path/requirements.txt" ]; then
     if [ $? -eq 0 ]; then
         echo -e "source '$venv_path/bin/activate'" > evora.info
         echo " done :)"
-        echo -e "\033[1;97m type 'source $venv_path/bin/activate' to activate the virtual environment"
+        echo -e "\033[1;97m type (source '$venv_path/bin/activate') to activate the virtual environment"
         echo -e "\033[1;97m and then 'evora -h' to know how to use it"
     else
         echo -e "\033[1;31;40m there is an error occurred during installation"

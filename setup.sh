@@ -25,8 +25,8 @@ venv_path="$script_path/venvEvora"
 # Install python3-venv if not already installed
 if ! dpkg -s python3-venv &> /dev/null; then
     echo -e "\033[1;33mInstalling python3-venv package...\033[0m"
-    apt install python3-venv -y > pip_install_output.txt 2>&1
-    apt install python3-pip -y
+    sudo apt install python3-venv -y > pip_install_output.txt 2>&1
+    sudo apt install python3-pip -y
     if [ $? -ne 0 ]; then
         echo -e "\033[1;31mFailed to install python3-venv. Check pip_install_output.txt for details.\033[0m"
         exit 1
@@ -47,7 +47,7 @@ if [ -f "$script_path/requirements.txt" ]; then
     echo -e "\033[1;32m Installing requirements..."
 
 
-    pip install -r "$script_path/requirements.txt" > pip_install_output.txt 2>&1
+    sudo pip3install -r "$script_path/requirements.txt" > pip_install_output.txt 2>&1
     sleep 5
 
     if [ $? -eq 0 ]; then
@@ -71,7 +71,7 @@ else
     echo -e "\033[1;32m Installing required packages..."
 
 
-    pip install readline google google-generativeai > pip_install_output.txt 2>&1
+    sudo pip3install readline google google-generativeai > pip_install_output.txt 2>&1
     sleep 5
 
     if [ $? -eq 0 ]; then

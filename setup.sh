@@ -27,6 +27,7 @@ if ! dpkg -s python3-venv &> /dev/null; then
     echo -e "\033[1;33mInstalling python3-venv package...\033[0m"
     sudo apt install python3-venv -y > pip_install_output.txt 2>&1
     sudo apt install python3-pip -y
+    sudo apt install python3-virtualenv
     if [ $? -ne 0 ]; then
         echo -e "\033[1;31mFailed to install python3-venv. Check pip_install_output.txt for details.\033[0m"
         exit 1
@@ -39,7 +40,7 @@ if [ -f "$script_path/requirements.txt" ]; then
     echo -e "\033[1;32m Creating virtual environment..."
 
     
-    python3 -m venv "$venv_path" > pip_install_output.txt 2>&1
+    virtualenv venv "$venv_path" > pip_install_output.txt 2>&1
 
 
     source "$venv_path/bin/activate"

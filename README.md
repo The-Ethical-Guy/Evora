@@ -38,10 +38,10 @@ for the full decumentary click [here](https://github.com/The-Ethical-Guy/Evora/b
 # Evora how to install
 
 ```
-sudo apt update
+apt update
 ```
 ```
-sudo apt install git
+apt install git
 ```
 ```
 git clone https://github.com/The-Ethical-Guy/Evora.git
@@ -53,7 +53,7 @@ cd Evora
 chmod +x setup.sh
 ```
 ```
-sudo bash setup.sh
+bash setup.sh
 ```
 
 # How to run the tool

@@ -26,6 +26,7 @@ venv_path="$script_path/venvEvora"
 if ! dpkg -s python3-venv &> /dev/null; then
     echo -e "\033[1;33mInstalling python3-venv package...\033[0m"
     apt install python3-venv -y > pip_install_output.txt 2>&1
+    apt install python3-pip -y
     if [ $? -ne 0 ]; then
         echo -e "\033[1;31mFailed to install python3-venv. Check pip_install_output.txt for details.\033[0m"
         exit 1
@@ -52,7 +53,7 @@ if [ -f "$script_path/requirements.txt" ]; then
     if [ $? -eq 0 ]; then
         echo -e "source '$venv_path/bin/activate'" > evora.info
         echo " done :)"
-        echo -e "\033[1;97m type 'source $venv_path/bin/activate' to activate the virtual environment"
+        echo -e "\033[1;97m type (source '$venv_path/bin/activate') to activate the virtual environment"
         echo -e "\033[1;97m and then 'evora -h' to know how to use it"
     else
         echo -e "\033[1;31;40m there is an error occurred during installation"

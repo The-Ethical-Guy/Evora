@@ -62,7 +62,7 @@ else
     echo -e "\033[1;32m Installing required packages..."
 
 
-    pip install readline google google-generativeai > pip_install_output.txt 2>&1
+    pip install requests readline google google-generativeai > pip_install_output.txt 2>&1
     rm pip_install_output.txt
     sleep 5
 

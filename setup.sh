@@ -24,7 +24,7 @@ if [ -f "$script_path/requirements.txt" ]; then
     echo ""
     echo -e "\033[1;32m Installing requirements..."
 
-    pip3 install -r "$script_path/requirements.txt" > pip_install_output.txt 2>&1
+    pip3 install -r "$script_path/requirements.txt" --break-system-packages > pip_install_output.txt 2>&1
     rm pip_install_output.txt
     sleep 5
     

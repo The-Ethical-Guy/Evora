@@ -40,7 +40,7 @@ if [ -f "$script_path/requirements.txt" ]; then
     echo -e "\033[1;32m Creating virtual environment..."
 
     
-    virtualenv venv "$venv_path" > pip_install_output.txt 2>&1
+    virtualenv "$venv_path" > pip_install_output.txt 2>&1
 
 
     source "$venv_path/bin/activate"
@@ -64,7 +64,7 @@ else
     echo -e "\033[1;32m Creating virtual environment..."
 
 
-    python3 -m venv "$venv_path"
+    virtualenv "$venv_path"
 
 
     source "$venv_path/bin/activate"

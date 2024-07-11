@@ -48,7 +48,7 @@ if [ -f "$script_path/requirements.txt" ]; then
     echo -e "\033[1;32m Installing requirements..."
 
 
-    sudo pip3install -r "$script_path/requirements.txt" > pip_install_output.txt 2>&1
+    sudo pip3 install -r "$script_path/requirements.txt" > pip_install_output.txt 2>&1
     sleep 5
 
     if [ $? -eq 0 ]; then
@@ -72,7 +72,7 @@ else
     echo -e "\033[1;32m Installing required packages..."
 
 
-    sudo pip3install readline google google-generativeai > pip_install_output.txt 2>&1
+    sudo pip3 install readline google google-generativeai > pip_install_output.txt 2>&1
     sleep 5
 
     if [ $? -eq 0 ]; then

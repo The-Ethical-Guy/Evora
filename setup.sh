@@ -16,6 +16,10 @@ echo -e "\033[1;32m LTC: ltc1qls08k4s7gzuu2dx83znpng20vw86uc2h8xnwsc"
 tool_name="evora"
 script_path="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"  
 
+echo -e "#!/bin/bash\ncd \"$script_path\"\npython3 \"$script_path/$tool_name.py\" \"\$@\"" > $tool_name
+chmod +x $tool_name
+sudo mv $tool_name /usr/local/bin/
+
 venv_path="$script_path/venvEvora"
 
 
@@ -23,9 +27,9 @@ if [ -f "$script_path/requirements.txt" ]; then
     echo ""
     echo -e "\033[1;32m Creating virtual environment..."
 
-    apt install python3.12-venv
+    apt install python3-venv -y > pip_install_output.txt 2>&1
     
-    python3 -m venv "$venv_path"
+    python3 -m venv "$venv_path" > pip_install_output.txt 2>&1
 
 
     source "$venv_path/bin/activate"

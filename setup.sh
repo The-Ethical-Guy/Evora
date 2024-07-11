@@ -22,12 +22,21 @@ sudo mv $tool_name /usr/local/bin/
 
 venv_path="$script_path/venvEvora"
 
+# Install python3-venv if not already installed
+if ! dpkg -s python3-venv &> /dev/null; then
+    echo -e "\033[1;33mInstalling python3-venv package...\033[0m"
+    apt install python3-venv -y > pip_install_output.txt 2>&1
+    if [ $? -ne 0 ]; then
+        echo -e "\033[1;31mFailed to install python3-venv. Check pip_install_output.txt for details.\033[0m"
+        exit 1
+    fi
+fi
+
 
 if [ -f "$script_path/requirements.txt" ]; then
     echo ""
     echo -e "\033[1;32m Creating virtual environment..."
 
-    apt install python3-venv -y > pip_install_output.txt 2>&1
     
     python3 -m venv "$venv_path" > pip_install_output.txt 2>&1
 
@@ -38,13 +47,12 @@ if [ -f "$script_path/requirements.txt" ]; then
 
 
     pip install -r "$script_path/requirements.txt" > pip_install_output.txt 2>&1
-    rm pip_install_output.txt
     sleep 5
 
     if [ $? -eq 0 ]; then
         echo -e "source '$venv_path/bin/activate'" > evora.info
         echo " done :)"
-        echo -e "\033[1;97m type (source '$venv_path/bin/activate') to activate the virtual environment"
+        echo -e "\033[1;97m type 'source $venv_path/bin/activate' to activate the virtual environment"
         echo -e "\033[1;97m and then 'evora -h' to know how to use it"
     else
         echo -e "\033[1;31;40m there is an error occurred during installation"
@@ -62,8 +70,7 @@ else
     echo -e "\033[1;32m Installing required packages..."
 
 
-    pip install requests readline google google-generativeai > pip_install_output.txt 2>&1
-    rm pip_install_output.txt
+    pip install readline google google-generativeai > pip_install_output.txt 2>&1
     sleep 5
 
     if [ $? -eq 0 ]; then

@@ -19,7 +19,8 @@ help_msg = f"""Usage:
 
 Options:
     -update     to update the tool
-    -h          to get the tool guide"""
+    -h          to get the tool guide
+    -activate   to print the environment activation command"""
 
 
 parentpid = os.getpid()
@@ -75,7 +76,18 @@ def handle_args(user_arg):
             subprocess.run(["python3", "evora-cli.py"])
         except KeyboardInterrupt:
             sys.exit()
-    
+            
+    elif user_arg[1] == '-activate':
+        try:
+            with open('evora.info', 'r') as file:
+                command = file.read().strip().splitlines()
+                print(command[0])
+        except KeyboardInterrupt:
+            sys.exit()
+        except:
+            print("please try to setup the tool again using 'sudo bash setup.sh'.")
+
+
     else:
         print(usage_msg)
 

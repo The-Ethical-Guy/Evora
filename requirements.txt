@@ -1,3 +1,4 @@
 readline
 google
 google.generativeai
+requests

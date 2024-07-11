@@ -27,7 +27,7 @@ if ! dpkg -s python3-venv &> /dev/null; then
     echo -e "\033[1;33mInstalling python3-venv package...\033[0m"
     sudo apt install python3-venv -y > pip_install_output.txt 2>&1
     sudo apt install python3-pip -y
-    sudo apt install python3-virtualenv
+    sudo apt install python3-virtualenv -y
     if [ $? -ne 0 ]; then
         echo -e "\033[1;31mFailed to install python3-venv. Check pip_install_output.txt for details.\033[0m"
         exit 1

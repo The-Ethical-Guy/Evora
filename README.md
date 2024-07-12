@@ -57,6 +57,10 @@ bash setup.sh
 ```
 
 # How to run the tool
+set up the environment
+```
+source 'path/to/venvEvora/bin/activate' 
+```
 to get all tool options
 ```
 evora -h 

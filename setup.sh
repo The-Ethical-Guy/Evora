@@ -47,8 +47,8 @@ if [ -f "$script_path/requirements.txt" ]; then
 
     echo -e "\033[1;32m Installing requirements..."
 
-    sudo apt-get install libreadline-dev
-    pip install pyproject-toml 
+    sudo apt-get install libreadline-dev -y > pip_install_output.txt 2>&1
+    pip install pyproject-toml > pip_install_output.txt 2>&1
     pip install -r "$script_path/requirements.txt" > pip_install_output.txt 2>&1
     sleep 5
 
@@ -73,8 +73,8 @@ else
     echo -e "\033[1;32m Installing required packages..."
 
 
-    sudo apt-get install libreadline-dev
-    pip install pyproject-toml 
+    sudo apt-get install libreadline-dev -y > pip_install_output.txt 2>&1
+    pip install pyproject-toml > pip_install_output.txt 2>&1
     pip install readline google google-generativeai requests > pip_install_output.txt 2>&1
     sleep 5
 

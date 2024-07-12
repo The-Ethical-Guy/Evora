@@ -72,7 +72,7 @@ else
     echo -e "\033[1;32m Installing required packages..."
 
 
-    sudo pip install readline google google-generativeai > pip_install_output.txt 2>&1
+    sudo pip install readline google google-generativeai requests > pip_install_output.txt 2>&1
     sleep 5
 
     if [ $? -eq 0 ]; then

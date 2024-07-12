@@ -27,6 +27,10 @@ parentpid = os.getpid()
 
 
 def update_evora():
+    if os.geteuid() != 0:
+        print("\033[1;31;40mThis feature must be run as root use sudo to run it. Exiting...\033[0m")
+        return
+
     evora_path = "../Evora"
     if os.path.exists(evora_path):
         shutil.rmtree(evora_path)
@@ -44,9 +48,9 @@ def update_evora():
             source_folder = os.path.join(temp_path, "Evora-main")
             shutil.move(source_folder, evora_path)
 
-            print("Evora updated successfully!")
+            print("\033[1;32;40mEvora updated successfully!\033[0m")
         else:
-            print(f"Failed to download Evora from GitHub. Status code: {response.status_code}")
+            print(f"\033[1;31;40mFailed to download Evora from GitHub. Status code: {response.status_code}\033[0m")
 
 
 def handle_args(user_arg):

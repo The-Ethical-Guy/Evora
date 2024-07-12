@@ -15,7 +15,7 @@ echo -e "\033[1;32m LTC: ltc1qls08k4s7gzuu2dx83znpng20vw86uc2h8xnwsc"
 
 # Check if the script is run as root
 if [ "$(id -u)" -ne 0 ]; then
-    echo -e "\033[1;97m\033[1;31;40mThis script must be run as root use sudo to run it. Exiting...\033[0m"
+    echo -e "\033[1;31;40mThis script must be run as root use sudo to run it. Exiting...\033[0m"
     exit 1
 fi
 

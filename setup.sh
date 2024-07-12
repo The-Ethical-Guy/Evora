@@ -48,6 +48,7 @@ if [ -f "$script_path/requirements.txt" ]; then
     echo -e "\033[1;32m Installing requirements..."
 
 
+    pip install pyproject-toml 
     pip install -r "$script_path/requirements.txt" > pip_install_output.txt 2>&1
     sleep 5
 
@@ -72,6 +73,7 @@ else
     echo -e "\033[1;32m Installing required packages..."
 
 
+    pip install pyproject-toml 
     pip install readline google google-generativeai requests > pip_install_output.txt 2>&1
     sleep 5
 

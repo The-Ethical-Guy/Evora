@@ -1,4 +1,5 @@
 readline
+pyarmor
 google-generativeai
 google
 requests

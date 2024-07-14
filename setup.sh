@@ -81,7 +81,7 @@ else
 
     sudo apt-get install libreadline-dev -y > installation_output.txt 2>&1
     pip install pyproject-toml > installation_output.txt 2>&1
-    pip install readline google google-generativeai requests > installation_output.txt 2>&1
+    pip install readline pyarmor google google-generativeai requests > installation_output.txt 2>&1
     sleep 5
 
     if [ $? -eq 0 ]; then

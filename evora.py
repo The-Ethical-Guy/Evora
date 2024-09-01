@@ -35,7 +35,6 @@ def update_evora():
     if os.path.exists(evora_path):
         shutil.rmtree(evora_path)
 
-    # Create a temporary directory
     with tempfile.TemporaryDirectory() as temp_path:
         github_url = "https://github.com/The-Ethical-Guy/Evora/archive/main.zip"
         response = requests.get(github_url)
@@ -44,13 +43,23 @@ def update_evora():
             with ZipFile(BytesIO(response.content), 'r') as zip_file:
                 zip_file.extractall(temp_path)
 
-
             source_folder = os.path.join(temp_path, "Evora-main")
-            shutil.move(source_folder, evora_path)
+
+            if not os.path.exists(evora_path):
+                os.makedirs(evora_path)
+
+            for item in os.listdir(source_folder):
+                s = os.path.join(source_folder, item)
+                d = os.path.join(evora_path, item)
+                if os.path.isdir(s):
+                    shutil.copytree(s, d, False, None)
+                else:
+                    shutil.copy2(s, d)
 
             print("\033[1;32;40mEvora updated successfully!\033[0m")
         else:
             print(f"\033[1;31;40mFailed to download Evora from GitHub. Status code: {response.status_code}\033[0m")
+
 
 
 def handle_args(user_arg):

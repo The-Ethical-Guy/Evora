@@ -1,0 +1,268 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Change font to Roboto */
+    overflow: hidden;
+    font-size: 16px;
+    background: rgb(0,0,0);
+    background: linear-gradient(274deg, rgba(0,0,0,1) -12%, rgba(74,0,3,1) 34%, rgba(101,0,0,1) 84%, rgba(0,0,0,1) 110%); 
+    color: #fff; /* Change text color to white for better contrast */
+}
+
+
+
+.lang-name {
+  display: inline;
+  
+
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* code highlighter */
+pre code.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+}
+code.hljs {
+    padding: 3px 5px;
+}
+.hljs {
+    background: #000;
+    color: #fff;
+}
+.hljs-comment {
+    color: #6a9955;
+}
+.hljs-punctuation,
+.hljs-tag {
+    color: rgb(255, 148, 18);
+}
+.hljs-tag .hljs-attr,
+.hljs-tag .hljs-name {
+    color: #4ec9b0;
+}
+
+.hljs-doctag,
+.hljs-name,
+.hljs-selector-tag {
+    font-weight: 700;
+    color: #569cd6;
+}
+
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-attribute {
+    font-weight: 700;
+    color: rgb(181, 0, 0);
+}
+
+.hljs-deletion,
+.hljs-number,
+.hljs-quote,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-string,
+.hljs-template-tag,
+.hljs-type {
+    color: rgb(171, 80, 0);
+}
+.hljs-section,
+.hljs-title {
+    color: #4ec9b0;
+    font-weight: 700;
+}
+.hljs-link,
+.hljs-operator,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-symbol {
+    color: rgb(115, 185, 255);
+}
+
+
+.hljs-template-variable,
+.hljs-variable {
+    color: rgb(16, 182, 232);
+}
+
+.hljs-literal {
+    color: #9cdcfe;
+}
+.hljs-addition,
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code {
+    color: #b5cea8;
+}
+.hljs-meta {
+    color: #9cdcfe;
+}
+.hljs-meta .hljs-string {
+    color: rgb(123, 2, 204);
+}
+.hljs-emphasis {
+    font-style: italic;
+}
+.hljs-strong {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+.code-bot {
+  width: 70%;
+  border-radius: 10px;
+  background-color: rgb(50, 50, 56);
+  overflow: hidden;
+  padding-top: 0.4%;
+}
+
+.lang-name {
+  user-select: none;
+  font-size: 100%;  
+  margin-left: 1%;
+
+}
+
+.copy-button-icon {
+  width: 68%
+}
+
+.copy-button {
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  float: right;
+
+}
+
+.copy-button:active {
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+.logo-name {
+  font-family: "bloody";
+  color: black;
+  text-align: center;
+  user-select: none;
+  font-size: 32px;
+}
+
+.version{
+  color: rgb(255, 255, 15);
+  font-family: "ocra";
+  position: absolute;
+  right: 2%;
+  top: 3%;
+  user-select: none;
+}
+
+
+.evora {
+  color: rgb(250, 11, 2);
+}
+.you {
+  color: rgb(66, 135, 245);
+}
+
+.message-user {
+  white-space: pre-wrap; /* Save the newlines */
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh; /* Make the container fill the whole viewport */
+  padding-bottom: 2%;
+}
+
+.chatbox {
+    width: 92%;
+    height: 700px;
+    overflow: auto;
+    border: 1px solid transparent; /* Set border color to transparent */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto; /* Add margin to center horizontally */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 93%;
+  padding: 10px;
+  margin: 0 auto; /* Add margin to center horizontally */
+}
+
+
+.message {
+    margin-bottom: 10px;
+}
+
+.user {
+    
+}
+
+.sendbox {
+    width: calc(100% - 70px); /* Adjust width to accommodate the button */
+    padding: 10px;
+    box-sizing: border-box;
+    border: none; /* Remove border for a cleaner look */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust background color with transparency */
+    color: #fff; /* Change text color to white */
+    outline: none;
+    resize: none;
+}
+
+.sendbutton {
+    width: 60px; /* Set fixed width for the button */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(112, 0, 0); /* Change button color */
+    color: #fff; /* Change text color to white */
+    cursor: pointer;
+}
+
+#send:hover {
+    background-color: rgb(59, 1, 1); /* Darker color on hover */
+}
+
+
+
+
+@font-face{
+    font-family: bloody;
+    src: url(fonts/BlackCaps.otf);
+}
+
+@font-face{
+    font-family: comicsans;
+    src: url(fonts/comic.ttf);
+}
+
+
+@font-face{
+    font-family: ocra;
+    src: url(fonts/OCRAStd.otf);
+}

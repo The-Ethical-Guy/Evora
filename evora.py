@@ -10,12 +10,12 @@ import tempfile
 
 
 usage_msg = f"""Usage:
-{sys.argv[0]} -w <port>              // to start the web interface
-{sys.argv[0]} -t                    // to start the command line interface
+evora -w <port>              // to start the web interface
+evora -t                    // to start the command line interface
 please try '{sys.argv[0]} -h' to see the options"""
 help_msg = f"""Usage:
-{sys.argv[0]} -w <port>              // to start the web interface
-{sys.argv[0]} -t                    // to start the command line interface
+evora -w <port>              // to start the web interface
+evora -t                    // to start the command line interface
 
 Options:
     -update     to update the tool

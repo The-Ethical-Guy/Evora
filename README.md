@@ -7,7 +7,6 @@
 ![](https://img.shields.io/badge/version-V2.8-red)
 ![](https://img.shields.io/badge/IQ-470-purple)
 ![](https://img.shields.io/badge/status-active-green)
-![](https://img.shields.io/badge/licens-GPLV3-white)
 
 
 

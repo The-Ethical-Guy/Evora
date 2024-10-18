@@ -78,7 +78,7 @@ def handle_args(user_arg):
     elif user_arg[1] == '-w':
         try:
             port = user_arg[2]
-            subprocess.run(["python3", "evora-web.py", port])
+            subprocess.run(["python3.11", "evora-web.py", port])
         except KeyboardInterrupt:
             sys.exit()
         except:
@@ -86,7 +86,7 @@ def handle_args(user_arg):
 
     elif user_arg[1] == '-t':
         try:
-            subprocess.run(["python3", "evora-cli.py"])
+            subprocess.run(["python3.11", "evora-cli.py"])
         except KeyboardInterrupt:
             sys.exit()
             

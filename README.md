@@ -3,11 +3,12 @@
   <img src="https://files.catbox.moe/851sck.png" width="50%">
 </p>
 
-![](https://img.shields.io/badge/category-ai_chatbot-blue)
+![](https://img.shields.io/badge/category-ai_chatbot-yellow)
 ![](https://img.shields.io/badge/version-V2.8-red)
 ![](https://img.shields.io/badge/IQ-470-purple)
 ![](https://img.shields.io/badge/status-active-green)
 ![](https://img.shields.io/badge/license-dedicated-white)
+![](https://img.shields.io/badge/Py-3.11-blue)
 
 
 <br>
